@@ -1,0 +1,115 @@
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Contenedor principal */
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Barra de herramientas superior */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444;
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.toolbar-left button {
+  background: none;
+  border: none;
+  color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.toolbar-left button:hover {
+  color: #00bcd4;
+}
+
+.toolbar-right input {
+  padding: 5px;
+  border: 1px solid #555;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Contenedor principal */
+.main-container {
+  display: flex;
+  flex: 1;
+}
+
+/* Barra lateral izquierda */
+.sidebar-left {
+  width: 60px;
+  background-color: #444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  border-right: 1px solid #555;
+}
+
+.sidebar-left button {
+  background: none;
+  border: none;
+  color: #fff;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.sidebar-left button:hover {
+  color: #00bcd4;
+}
+
+/* Lienzo central */
+.canvas-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+}
+
+/* Barra lateral derecha */
+.sidebar-right {
+  width: 200px;
+  background-color: #444;
+  padding: 10px;
+  border-left: 1px solid #555;
+}
+
+.sidebar-right h3 {
+  margin-top: 0;
+  font-size: 16px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+}
+
+.sidebar-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-right li {
+  margin: 5px 0;
+  padding: 5px;
+  background-color: #555;
+  cursor: pointer;
+}
+
+.sidebar-right li:hover {
+  background-color: #666;
+}

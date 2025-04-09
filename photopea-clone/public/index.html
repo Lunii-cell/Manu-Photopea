@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photopea Clone</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Barra de herramientas superior -->
+    <header class="toolbar">
+      <div class="toolbar-left">
+        <button>Archivo</button>
+        <button>Editar</button>
+        <button>Imagen</button>
+        <button>Capa</button>
+        <button>Texto</button>
+        <button>Filtro</button>
+        <button>Ver</button>
+        <button>Ventana</button>
+        <button>Ayuda</button>
+      </div>
+      <div class="toolbar-right">
+        <input type="text" placeholder="Buscar herramientas...">
+      </div>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main class="main-container">
+      <!-- Barra lateral izquierda -->
+      <aside class="sidebar-left">
+        <ul>
+          <li><button>Pincel</button></li>
+          <li><button>Borrador</button></li>
+          <li><button>Seleccionar</button></li>
+          <li><button>Recortar</button></li>
+          <li><button>Texto</button></li>
+          <li><button>Formas</button></li>
+          <li><button>Zoom</button></li>
+        </ul>
+      </aside>
+
+      <!-- Lienzo central -->
+      <section class="canvas-container">
+        <canvas id="drawingCanvas" width="1200" height="800"></canvas>
+      </section>
+
+      <!-- Barra lateral derecha -->
+      <aside class="sidebar-right">
+        <div class="layers-panel">
+          <h3>Capas</h3>
+          <ul id="layers">
+            <li>Capa 1</li>
+          </ul>
+          <button id="addLayer">Añadir Capa</button>
+          <button id="removeLayer">Eliminar Capa</button>
+        </div>
+        <div class="history-panel">
+          <h3>Historial</h3>
+          <ul id="history">
+            <li>Acción 1</li>
+            <li>Acción 2</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="../src/app.js" type="module"></script>
+</body>
+</html>
